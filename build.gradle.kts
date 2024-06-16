@@ -35,5 +35,6 @@ dependencies {
     implementation("org.springframework.cloud:spring-cloud-starter-gateway:3.1.0")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     api("com.ssu.commerce:ssu-commerce-config-client:2024.03.1")
+    implementation("io.netty:netty-resolver-dns-native-macos:4.1.75.Final:osx-aarch_64")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
