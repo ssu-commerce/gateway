@@ -5,3 +5,5 @@ spring:
     gateway:
       default-filters:
         - LoggingFilter
+  main:
+    web-application-type: reactive
