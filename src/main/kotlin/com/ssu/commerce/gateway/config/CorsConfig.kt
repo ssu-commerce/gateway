@@ -11,7 +11,7 @@ import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource
 @Configuration
 @EnableConfigurationProperties
 @ConfigurationProperties("cors")
-class CorsConfig{
+class CorsConfig {
     lateinit var allowedOrigin: List<String>
 
     @Bean
