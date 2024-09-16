@@ -21,7 +21,7 @@ class CorsConfig {
                 allowCredentials = true
                 addAllowedHeader("*")
                 addAllowedMethod("*")
-                allowedOrigin.forEach { addAllowedHeader(it) }
+                allowedOrigin.forEach { addAllowedOriginPattern(it) }
             }
         val corsConfigurationSource = UrlBasedCorsConfigurationSource()
         corsConfigurationSource.registerCorsConfiguration("/**", corsConfig)
